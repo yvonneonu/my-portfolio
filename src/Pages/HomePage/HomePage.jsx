@@ -7,7 +7,7 @@ import React from "react";
 // import CardContent from "@mui/material/CardContent";
 // import CardMedia from "@mui/material/CardMedia";
 import CircularStatic from "../../components/circularProgressWithLabel/CircularProgressWithLabel";
-import HtmlIcon from "@mui/icons-material/Html";
+// import HtmlIcon from "@mui/icons-material/Html";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
@@ -675,7 +675,7 @@ function Homepage() {
                 </Typography>
                 <Stack direction="row" spacing={2} sx={{ flexWrap: "wrap" }}>
                   <Tooltip title="Html">
-                    <IconButton>
+                    {/* <IconButton>
                       <HtmlIcon sx={{ color: "white" }} />
                     </IconButton>
                   </Tooltip>
@@ -687,7 +687,7 @@ function Homepage() {
                   <Tooltip title="Html">
                     <IconButton>
                       <HtmlIcon sx={{ color: "white" }} />
-                    </IconButton>
+                    </IconButton> */}
                   </Tooltip>
                   <Tooltip title="Delete">
                     <IconButton>
