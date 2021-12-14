@@ -45,9 +45,10 @@ const theme = createTheme();
 
 function Homepage() {
   const tim = useTheme();
-  
+
   const [progress, setProgress] = React.useState(0);
   console.log(progress);
+  
 
 
   React.useEffect(() => {
