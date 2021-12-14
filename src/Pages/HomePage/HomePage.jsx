@@ -8,7 +8,6 @@ import AppBar from "@mui/material/AppBar";
 // import CardMedia from "@mui/material/CardMedia";
 import CircularStatic from "../../components/circularProgressWithLabel/CircularProgressWithLabel";
 import HtmlIcon from "@mui/icons-material/Html";
-import CircularProgress from "@mui/material/CircularProgress";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
@@ -40,13 +39,14 @@ function Copyright() {
     </Typography>
   );
 }
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 
 const theme = createTheme();
 
 function Homepage() {
   const tim = useTheme();
   const [progress, setProgress] = React.useState(0);
+  console.log(progress);
 
   React.useEffect(() => {
     const timer = setInterval(() => {
