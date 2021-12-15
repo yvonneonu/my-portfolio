@@ -1,5 +1,5 @@
 import React from "react";
-// import AppBar from "@mui/material/AppBar";
+import AppBar from "@mui/material/AppBar";
 // import Button from "@mui/material/Button";
 // import CameraIcon from "@mui/icons-material/PhotoCamera";
 // import Card from "@mui/material/Card";
@@ -7,7 +7,7 @@ import React from "react";
 // import CardContent from "@mui/material/CardContent";
 // import CardMedia from "@mui/material/CardMedia";
 import CircularStatic from "../../components/circularProgressWithLabel/CircularProgressWithLabel";
-// import HtmlIcon from "@mui/icons-material/Html";
+import HtmlIcon from "@mui/icons-material/Html";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
@@ -16,7 +16,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
+import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
@@ -24,7 +24,7 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-// import TemporaryDrawer from "../../components/TemporaryDrawer/TemporaryDrawer.jsx";
+import TemporaryDrawer from "../../components/TemporaryDrawer/TemporaryDrawer.jsx";
 import { createTheme, ThemeProvider, useTheme } from "@mui/material/styles";
 
 function Copyright() {
@@ -61,7 +61,7 @@ function Homepage() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {/* <AppBar position="relative">
+      <AppBar position="relative">
         <Toolbar>
           <Grid container spacing={2}>
             <Grid item xs={2}>
@@ -205,7 +205,7 @@ function Homepage() {
             )}
           </Grid>
         </Toolbar>
-      </AppBar> */}
+      </AppBar>
       <main>
         {/* Hero unit */}
         <Container maxWidth="lg">
@@ -675,11 +675,6 @@ function Homepage() {
                 </Typography>
                 <Stack direction="row" spacing={2} sx={{ flexWrap: "wrap" }}>
                   <Tooltip title="Html">
-                    {/* <IconButton>
-                      <HtmlIcon sx={{ color: "white" }} />
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title="Html">
                     <IconButton>
                       <HtmlIcon sx={{ color: "white" }} />
                     </IconButton>
@@ -687,7 +682,12 @@ function Homepage() {
                   <Tooltip title="Html">
                     <IconButton>
                       <HtmlIcon sx={{ color: "white" }} />
-                    </IconButton> */}
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Html">
+                    <IconButton>
+                      <HtmlIcon sx={{ color: "white" }} />
+                    </IconButton>
                   </Tooltip>
                   <Tooltip title="Delete">
                     <IconButton>
