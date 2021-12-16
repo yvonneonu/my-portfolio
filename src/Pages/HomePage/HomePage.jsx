@@ -131,7 +131,7 @@ function Homepage() {
                       }}
                     >
                       <Typography variant="body1" component="div">
-                        Services
+                        Service
                       </Typography>
                     </Link>
 
@@ -148,7 +148,7 @@ function Homepage() {
                       }}
                     >
                       <Typography variant="body1" component="div">
-                        Writings
+                        Writing
                       </Typography>
                     </Link>
 
@@ -165,7 +165,7 @@ function Homepage() {
                       }}
                     >
                       <Typography variant="body1" component="div">
-                        Contacts
+                        Contact
                       </Typography>
                     </Link>
                     <Link
