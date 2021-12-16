@@ -106,6 +106,7 @@ function Homepage() {
                       sx={{
                         marginRight: 2,
                         "&:hover": {
+
                           color: "red",
                           opacity: [0.9, 0.8, 0.7],
                         },
@@ -147,7 +148,7 @@ function Homepage() {
                       }}
                     >
                       <Typography variant="body1" component="div">
-                        Writing
+                        Writings
                       </Typography>
                     </Link>
 
@@ -164,7 +165,7 @@ function Homepage() {
                       }}
                     >
                       <Typography variant="body1" component="div">
-                        Contact
+                        Contacts
                       </Typography>
                     </Link>
                     <Link
