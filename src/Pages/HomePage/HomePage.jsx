@@ -487,7 +487,7 @@ function Homepage() {
 
           <Grid mt={2} px={2} container spacing={2}>
             <Grid item xs={12}>
-              <Typography variant="h5" component="div">
+              <Typography variant="h2" component="div">
                 Skills
               </Typography>
             </Grid>
@@ -503,7 +503,7 @@ function Homepage() {
                 }}
               >
                 <CircularStatic numb={75} />
-                <Typography variant="h1" component="h2">
+                <Typography variant="h3" component="div">
                   Java
                 </Typography>
 
@@ -523,8 +523,8 @@ function Homepage() {
                   flexDirection: "column",
                 }}
               >
-                <CircularStatic numb={75} />
-                <Typography variant="h1" component="h2">
+                <CircularStatic numb={95} />
+                <Typography variant="h3" component="div">
                   Java
                 </Typography>
               </Stack>
@@ -541,8 +541,8 @@ function Homepage() {
                   flexDirection: "column",
                 }}
               >
-                <CircularStatic numb={75} />
-                <Typography variant="h1" component="h2">
+                <CircularStatic numb={85} />
+                <Typography variant="h3" component="div">
                   Java
                 </Typography>
               </Stack>
