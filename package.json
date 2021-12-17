@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "build": "node --max_old_space_size=4096 node_modules/@vue/cli-service/bin/vue-cli-service.js build --mode development",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -29,6 +30,7 @@
       "react-app/jest"
     ]
   },
+  
   "browserslist": {
     "production": [
       ">0.2%",
