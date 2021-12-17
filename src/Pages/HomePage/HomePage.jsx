@@ -491,7 +491,7 @@ function Homepage() {
                 Skills
               </Typography>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item sm = {6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -512,7 +512,7 @@ function Homepage() {
               </Stack>
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid item sm = {6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -525,12 +525,12 @@ function Homepage() {
               >
                 <CircularStatic numb={95} />
                 <Typography variant="h3" component="div">
-                  Java
+                  Javascript
                 </Typography>
               </Stack>
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid item sm = {6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -543,7 +543,25 @@ function Homepage() {
               >
                 <CircularStatic numb={85} />
                 <Typography variant="h3" component="div">
-                  Java
+                  HTML
+                </Typography>
+              </Stack>
+            </Grid>
+
+            <Grid item sm = {6} xs={12} md={3}>
+              <Stack
+                spacing={2}
+                direction="row"
+                sx={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CircularStatic numb={85} />
+                <Typography variant="h3" component="div">
+                  CSS
                 </Typography>
               </Stack>
             </Grid>
