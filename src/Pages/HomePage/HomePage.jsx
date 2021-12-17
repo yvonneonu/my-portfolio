@@ -62,8 +62,8 @@ function Homepage() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
-          <Grid container spacing={2}>
+        <Toolbar sx= {{alignItems:"center",justifyContent: "center"}}>
+          <Grid container maxWidth = "lg" spacing={2}>
             <Grid item xs={2}>
               <Box>
                 <Typography variant="h5" component="div">
@@ -487,11 +487,11 @@ function Homepage() {
 
           <Grid mt={2} px={2} container spacing={2}>
             <Grid item xs={12}>
-              <Typography variant="h5" component="div">
+              <Typography variant="h2" component="div">
                 Skills
               </Typography>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item sm = {6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -503,7 +503,7 @@ function Homepage() {
                 }}
               >
                 <CircularStatic numb={75} />
-                <Typography variant="h1" component="h2">
+                <Typography variant="h3" component="div">
                   Java
                 </Typography>
 
@@ -512,7 +512,7 @@ function Homepage() {
               </Stack>
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid item sm = {6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -523,14 +523,14 @@ function Homepage() {
                   flexDirection: "column",
                 }}
               >
-                <CircularStatic numb={75} />
-                <Typography variant="h1" component="h2">
-                  Java
+                <CircularStatic numb={95} />
+                <Typography variant="h3" component="div">
+                  Javascript
                 </Typography>
               </Stack>
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid item sm = {6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -541,9 +541,27 @@ function Homepage() {
                   flexDirection: "column",
                 }}
               >
-                <CircularStatic numb={75} />
-                <Typography variant="h1" component="h2">
-                  Java
+                <CircularStatic numb={85} />
+                <Typography variant="h3" component="div">
+                  HTML
+                </Typography>
+              </Stack>
+            </Grid>
+
+            <Grid item sm = {6} xs={12} md={3}>
+              <Stack
+                spacing={2}
+                direction="row"
+                sx={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CircularStatic numb={85} />
+                <Typography variant="h3" component="div">
+                  CSS
                 </Typography>
               </Stack>
             </Grid>
