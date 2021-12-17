@@ -62,8 +62,8 @@ function Homepage() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
-          <Grid container spacing={2}>
+        <Toolbar sx= {{alignItems:"center",justifyContent: "center"}}>
+          <Grid container maxWidth = "lg" spacing={2}>
             <Grid item xs={2}>
               <Box>
                 <Typography variant="h5" component="div">
