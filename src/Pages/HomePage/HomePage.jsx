@@ -224,7 +224,7 @@ function Homepage() {
                   component="div"
                   sx={{ fontWeight: "bold" }}
                 >
-                  A mobile and Web developer.
+                  A mobile and Web developer very dedicated.
                 </Typography>
                 <Typography variant="h5" component="div">
                   Item 2
