@@ -6,6 +6,9 @@ import AppBar from "@mui/material/AppBar";
 // import CardActions from "@mui/material/CardActions";
 // import CardContent from "@mui/material/CardContent";
 // import CardMedia from "@mui/material/CardMedia";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CircularStatic from "../../components/circularProgressWithLabel/CircularProgressWithLabel";
 import HtmlIcon from "@mui/icons-material/Html";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -62,8 +65,8 @@ function Homepage() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar sx= {{alignItems:"center",justifyContent: "center"}}>
-          <Grid container maxWidth = "lg" spacing={2}>
+        <Toolbar sx={{ alignItems: "center", justifyContent: "center" }}>
+          <Grid container maxWidth="lg" spacing={2}>
             <Grid item xs={2}>
               <Box>
                 <Typography variant="h5" component="div">
@@ -106,7 +109,6 @@ function Homepage() {
                       sx={{
                         marginRight: 2,
                         "&:hover": {
-
                           color: "red",
                           opacity: [0.9, 0.8, 0.7],
                         },
@@ -198,8 +200,55 @@ function Homepage() {
                       justifyContent: "flex-end",
                     }}
                   >
-                    {" "}
-                    Hello ha
+                    <Stack direction="row" spacing={2}>
+                      <Link
+                        href="https://www.linkedin.com/in/yvonne-onuorah-924030155/"
+                        color="inherit"
+                        underline="hover"
+                        sx={{
+                          alignItems: "center",
+                          display: "flex",
+                          "&:hover": {
+                            color: "red",
+                            opacity: [0.9, 0.8, 0.7],
+                          },
+                        }}
+                      >
+                        <LinkedInIcon />
+                      </Link>
+
+                      <Link
+                        href="https://github.com/yvonneonu"
+                        color="inherit"
+                        underline="hover"
+                        sx={{
+                          alignItems: "center",
+                          display: "flex",
+                          "&:hover": {
+                            color: "red",
+                            opacity: [0.9, 0.8, 0.7],
+                          },
+                        }}
+                      >
+                        <GitHubIcon />
+                      </Link>
+
+                      <Link
+                        href="https://www.linkedin.com/in/yvonne-onuorah-924030155/"
+                        color="inherit"
+                        underline="hover"
+                        sx={{
+                          alignItems: "center",
+                          display: "flex",
+                          "&:hover": {
+                            color: "red",
+                            opacity: [0.9, 0.8, 0.7],
+                          },
+                        }}
+                      >
+                        <TwitterIcon />
+                      </Link>
+                    </Stack>
                   </Box>
                 </Grid>
               </>
@@ -215,6 +264,7 @@ function Homepage() {
             container
             justifyContent="center"
             alignItems="center"
+  
             spacing={2}
           >
             <Grid item xs={12} md={6}>
@@ -222,9 +272,9 @@ function Homepage() {
                 <Typography
                   variant="h3"
                   component="div"
-                  sx={{ fontWeight: "bold" }}
+                  sx={{ fontWeight: "bold"}}
                 >
-                  A mobile and Web developer very dedicated.
+                  A mobile and Web developer.
                 </Typography>
                 <Typography variant="h5" component="div">
                   Item 2
@@ -253,13 +303,6 @@ function Homepage() {
             </Grid>
           </Grid>
 
-         
-         
-         
-         
-         
-         
-         
           <Grid px={2} id="Work" container spacing={2}>
             <Grid sx={{ mt: 5 }} item xs={12}>
               <Typography variant="h6" component="div">
@@ -498,7 +541,7 @@ function Homepage() {
                 Skills
               </Typography>
             </Grid>
-            <Grid item sm = {6} xs={12} md={3}>
+            <Grid item sm={6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -519,7 +562,7 @@ function Homepage() {
               </Stack>
             </Grid>
 
-            <Grid item sm = {6} xs={12} md={3}>
+            <Grid item sm={6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -537,7 +580,7 @@ function Homepage() {
               </Stack>
             </Grid>
 
-            <Grid item sm = {6} xs={12} md={3}>
+            <Grid item sm={6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
@@ -555,7 +598,7 @@ function Homepage() {
               </Stack>
             </Grid>
 
-            <Grid item sm = {6} xs={12} md={3}>
+            <Grid item sm={6} xs={12} md={3}>
               <Stack
                 spacing={2}
                 direction="row"
