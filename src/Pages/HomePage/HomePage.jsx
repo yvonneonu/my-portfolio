@@ -272,7 +272,7 @@ function Homepage() {
                 <Typography
                   variant="h3"
                   component="div"
-                  sx={{ fontWeight: "bold"}}
+                  sx={matches?{ fontWeight: "bold",textAlign: "center"}:{ fontWeight: "bold"}}
                 >
                   A mobile and Web developer.
                 </Typography>
@@ -297,7 +297,7 @@ function Homepage() {
                 <Avatar
                   sx={{ width: "300px", height: "300px" }}
                   alt="Memy Sharp"
-                  src="../../../public/images/von.jpg"
+                  src="images/von.jpg"
                 />
               </Box>
             </Grid>
@@ -553,7 +553,7 @@ function Homepage() {
                 }}
               >
                 <CircularStatic numb={75} />
-                <Typography variant="h3" component="div">
+                <Typography variant="h4" component="div">
                   Java
                 </Typography>
 
@@ -574,7 +574,7 @@ function Homepage() {
                 }}
               >
                 <CircularStatic numb={95} />
-                <Typography variant="h3" component="div">
+                <Typography variant="h4" component="div">
                   Javascript
                 </Typography>
               </Stack>
@@ -592,7 +592,7 @@ function Homepage() {
                 }}
               >
                 <CircularStatic numb={85} />
-                <Typography variant="h3" component="div">
+                <Typography variant="h4" component="div">
                   HTML
                 </Typography>
               </Stack>
@@ -610,7 +610,7 @@ function Homepage() {
                 }}
               >
                 <CircularStatic numb={85} />
-                <Typography variant="h3" component="div">
+                <Typography variant="h4" component="div">
                   CSS
                 </Typography>
               </Stack>
