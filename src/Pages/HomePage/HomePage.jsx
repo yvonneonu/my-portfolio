@@ -297,7 +297,7 @@ function Homepage() {
                 <Avatar
                   sx={{ width: "300px", height: "300px" }}
                   alt="Memy Sharp"
-                  src="https://cdn.pixabay.com/photo/2020/03/24/05/37/family-4962874__480.jpg"
+                  src="../../../public/images/von.jpg"
                 />
               </Box>
             </Grid>
