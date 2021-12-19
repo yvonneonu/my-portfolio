@@ -6,8 +6,9 @@ import AppBar from "@mui/material/AppBar";
 // import CardActions from "@mui/material/CardActions";
 // import CardContent from "@mui/material/CardContent";
 // import CardMedia from "@mui/material/CardMedia";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import TextField from "@mui/material/TextField";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CircularStatic from "../../components/circularProgressWithLabel/CircularProgressWithLabel";
 import HtmlIcon from "@mui/icons-material/Html";
@@ -35,7 +36,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="#">
-        My Portfolio
+        Yvonne Onuorah
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -155,7 +156,7 @@ function Homepage() {
                     </Link>
 
                     <Link
-                      href="#"
+                      href="#contact"
                       color="inherit"
                       underline="hover"
                       sx={{
@@ -264,7 +265,6 @@ function Homepage() {
             container
             justifyContent="center"
             alignItems="center"
-  
             spacing={2}
           >
             <Grid item xs={12} md={6}>
@@ -272,7 +272,11 @@ function Homepage() {
                 <Typography
                   variant="h3"
                   component="div"
-                  sx={matches?{ fontWeight: "bold",textAlign: "center"}:{ fontWeight: "bold"}}
+                  sx={
+                    matches
+                      ? { fontWeight: "bold", textAlign: "center" }
+                      : { fontWeight: "bold" }
+                  }
                 >
                   A mobile and Web developer.
                 </Typography>
@@ -305,7 +309,7 @@ function Homepage() {
 
           <Grid px={2} id="Work" container spacing={2}>
             <Grid sx={{ mt: 5 }} item xs={12}>
-              <Typography variant="h6" component="div">
+              <Typography variant="h5" component="div">
                 I can help with
               </Typography>
             </Grid>
@@ -773,13 +777,49 @@ function Homepage() {
             </Grid>
           </Grid>
 
-          <Grid mt={2} px={2} container spacing={2}>
-            <Grid item xs={12} md={6}>
-              <Item>xs=8</Item>
+          <Grid mt={2} px={2} id="contact" container spacing={2}>
+            <Typography variant="h2" component="div">
+              Contact
+            </Typography>
+           
+
+            <Grid item xs={12} md={12}>
+
+            <Typography variant="h5" component="div" sx={{ color: "red" }}>
+              Have a question or want to work together?
+            </Typography>
+              <Box
+                component="form"
+                sx={{
+                  "& > :not(style)": { m: 1, width: "70ch" },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField
+                  id="standard-basic"
+                  label="Standard"
+                  variant="standard"
+                />
+
+                
+                <TextField
+                  id="standard-basic"
+                  label="Standard"
+                  variant="standard"
+                />
+              </Box>
+              
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <Item>xs=8</Item>
+            <TextField
+                  id="standard-basic"
+                  label="Standard"
+                  variant="standard"
+                />
+
+              {/* <Item>xs=8</Item> */}
             </Grid>
           </Grid>
         </Container>
