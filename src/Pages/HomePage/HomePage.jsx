@@ -25,7 +25,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
+// import { styled } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import TemporaryDrawer from "../../components/TemporaryDrawer/TemporaryDrawer.jsx";
